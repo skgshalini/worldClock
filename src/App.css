@@ -1,38 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.TimerWrapper {
+  
+  background: #1A1A40;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TimerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.timer-input {
+  outline: none;
+  background: white;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  
+  
+}
+
+
+.timer-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid #8758ff;
+}
+
+
+
+
+.Timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 4rem;
+}
+.icon-margin {
+  margin-left: 0.75rem;
+}
+
+
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+}
+.time-box {
+  
+  background:  #1A1A40;;
+  border: 1px solid #fff;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  
+  color: #fff;
 }
